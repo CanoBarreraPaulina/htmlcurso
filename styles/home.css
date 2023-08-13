@@ -57,16 +57,15 @@ p{
 
 }
 #bar-navigator ul{
-    height: 40px;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    align-items: center;
+    gap: 40px;
+    
 }
 #menu{
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     left:20px;
     font-size: 20px;
@@ -87,8 +86,8 @@ p{
     transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
     width: 250px;
     height: 100vh;
-    background-color: #4a4e69;
-    color: white;
+    background-color: #83a183;
+    color: rgb(223, 223, 223);
     background-image: url(/image/corados.svg);
     background-size: cover;
     width: 200px;
@@ -97,8 +96,42 @@ p{
     border-right: 2px var(--light-gray) solid;
 }
 
-#collapsable *{
-    color: #e9e7e7;
+.menu{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    /*align-self: center;*/
+    z-index: 20;
+}
+.show{
+    visibility: visible!important;
+    opacity: 1!important;
+    transform: translateX(0)!important;
+}
+ul li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #020101;
+    padding: 25px 25px;
+    background-color: #dde5b6;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+ul li a:hover{
+    background-color: #DDE5B6;
+    color: #3c3d34 ;
+    
+}
+#logo{
+    position: absolute;
+    top: 5px;
+    width: 70px;
+    border-radius: 50px;
+    display: flex;
+    gap: 0px;
+    left: 1250px;
+    
+
 }
 
 .upper{
@@ -123,15 +156,6 @@ p{
     font-size: 100pt;
     font-style: italic;
 }
-.show{
-    visibility: visible!important;
-    opacity: 1!important;
-    transform: translateX(0)!important;
-}
-
-
-
-
 .link{
     text-decoration: none;
     text-align: center;
@@ -141,58 +165,39 @@ p{
     right: 75px;
     position: 30px;
     background: rgb(212,201,198);
-    background: linear-gradient(90deg, rgba(212,201,198,1) 0%, rgba(88,58,58,1) 52%, rgba(212,201,198,1) 100%); 
+    background: #b8c0ff; 
     padding: 10px 15px;
     font-size: 30px;
     font-family: 'Merriweather', serif;
     border-radius: 20px;
     color: #f2e9e4;
 }
-
-#chillon{
-    position: column;
-    width: 300px;
-    border-radius: 20px;
-    margin-top: 50px;
+.WRAPPER{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
-
-/*comentario*/
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;/*!important para q sea prioridad*/
+}
+/*comentario
 navbar>i{
     position: absolute;
     left: 60px;
     font-size: 26pt;
-    color: var(--dark-gray);
+    color: var(--dark-gray);*/
 
 
-}
-.menu{
-    position: absolute;
-    top: 15px;
-    left: 0;
-    /*align-self: center;*/
-    z-index: 20;
-}
-ul li a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: #020101;
-    padding: 25px 25px;
-    background-color: #dde5b6;
-    border-radius: 20px;
-    margin-bottom: 100px; 
-}
-ul li a:hover{
-    background-color: rgb(179, 156, 160);
-    color: #3c3d34 ;
-    
-}
-#logo{
-    position: relative;
-    width: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
+
 
 .link-text:link{
     color: rgb(116, 62, 62);
@@ -215,24 +220,43 @@ ul li a:hover{
 #lista-{
     margin-left: 20px;
 }
-.WRAPPER{
+
+#abajo1{
+    background-color: #dde5b6;
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: space-around;
+    align-items: flex-end;
+
 }
-.media{
+#abajotexto{
+    flex-direction: row;
+
+
+}
+.abajochillon{
+    gap: 300px;
+}
+#chillon{
+    position: column;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 50px;}
+/*segunda pagina*/
+.media1{
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:30px;/*!important para q sea prioridad*/
 }
 
+.info1{
+    display: flex;
+    flex-direction: ;
+    justify-content: center;
+
+    gap:30px;
+}
 @media screen and (max-width: 768px)/*es para celular*/{
 
 }

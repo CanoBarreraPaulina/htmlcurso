@@ -7,7 +7,7 @@
 
 .main-section{
     padding: 100px 150px;
-    background-color:#f2e9e4;
+    background-color:#dde5b6;
     background-attachment: local;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,7 +16,7 @@
 
 }
 h1{
-    color:#4a4e69;
+    color:#6c584c;
     font-family: 'EB Garamond', serif;
     font-size: 72px;
     letter-spacing: 50;
@@ -34,7 +34,7 @@ p{
 #image{
     position: relative;
     width: 300px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 50px;
     cursor: pointer;
     transition: transform 1s;
@@ -45,8 +45,8 @@ p{
     transform: scale(1.2);
 }
 #bar-navigator{
-    background-color: rgb(73, 51, 51);
-    color: rgb(227, 224, 230);
+    background-color: #dde5b6;
+    color: #445a41;
     height: 80px;
     position:sticky;
     top: 0;
@@ -63,6 +63,14 @@ p{
     justify-content: center;
     gap: 10px;
     align-items: center;
+}
+#menu{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:20px;
+    font-size: 20px;
+    cursor:pointer;
 }
 #menu:hover{
     cursor: pointer;
@@ -90,12 +98,12 @@ p{
 }
 
 #collapsable *{
-    color: #f7f2f2;
+    color: #e9e7e7;
 }
 
 .upper{
     height: 80px;
-    border-bottom: 2px #4a4e69;
+    border-bottom: 2px #0022ff;
     padding: 0px 215px;
     width: 215px;
 }
@@ -160,21 +168,30 @@ navbar>i{
 .menu{
     position: absolute;
     top: 15px;
-    left: 1000px;
-    align-self: center;
-    z-index: 20;}
+    left: 0;
+    /*align-self: center;*/
+    z-index: 20;
+}
 ul li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: #020101;
     padding: 25px 25px;
-    background-color: rgb(255, 255, 255);
+    background-color: #dde5b6;
     border-radius: 20px;
     margin-bottom: 100px; 
 }
 ul li a:hover{
     background-color: rgb(179, 156, 160);
-    color: rgb(255, 255, 255) ;
+    color: #3c3d34 ;
     
+}
+#logo{
+    position: relative;
+    width: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .link-text:link{
@@ -212,7 +229,7 @@ ul li a:hover{
 .info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap:30px;/*!important para q sea prioridad*/
 }
 
